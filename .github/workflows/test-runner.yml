@@ -1,18 +1,9 @@
-name: Test Self-Hosted Runner
-
-on: [push]
-
-jobs:
+obs:
   test-runner:
-    runs-on: self-hosted   # 👈 this ensures it runs on your machine
+    runs-on: self-hosted
+    defaults:
+      run:
+        shell: cmd
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Say Hello
-        run: echo "✅ Hello from my self-hosted runner!"
-
-      - name: Show system info
-        run: |
-          echo "Running on: $env:COMPUTERNAME"
-          echo "OS: $env:OS"
+        run: echo Hello from my self-hosted runner (using cmd.exe)
