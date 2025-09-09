@@ -1,9 +1,0 @@
-obs:
-  test-runner:
-    runs-on: self-hosted
-    defaults:
-      run:
-        shell: cmd
-    steps:
-      - name: Say Hello
-        run: echo Hello from my self-hosted runner (using cmd.exe)
