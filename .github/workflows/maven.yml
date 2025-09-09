@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  build:  # <--- ADD THIS BLOCK
 
     runs-on: ubuntu-latest
     permissions: # <--- ADD THIS BLOCK
