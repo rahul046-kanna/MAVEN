@@ -10,8 +10,10 @@ jobs:
   build:  # <--- ADD THIS BLOC
 
     runs-on: ubuntu-latest
-    permissions: # <--- ADD THIS BLOCK
-      contents: write # <--- THIS GRANTS WRITE PERMISSION FOR THE DEPENDENCY GRAPH
+    permissions:
+     contents: read
+     security-events: write
+
 
     steps:
     - uses: actions/checkout@v4
